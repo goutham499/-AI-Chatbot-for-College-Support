@@ -1,87 +1,67 @@
-# RAG-Based University Assistant Chatbot
+🎓 RAG-Based University Assistant Chatbot
 
-This is an AI chatbot that helps university students by answering their questions using uploaded PDF files. It uses a method called RAG (Retrieval-Augmented Generation) and Google’s Gemini API to find answers from the document.
+An intelligent AI-powered chatbot designed to assist university students by answering their queries using uploaded documents. This system leverages Retrieval-Augmented Generation (RAG) along with Google Gemini API to provide accurate, context-aware responses directly from PDF-based knowledge sources.
 
-This chatbot was made as a semester project
+📌 Project Overview
 
+This chatbot was developed as a semester project to address a common issue faced by students — repeatedly asking the same questions across platforms like WhatsApp, Instagram, and YouTube.
 
-## Project Goal
+The solution automates responses by retrieving relevant information from university documents and generating precise answers, reducing manual effort and improving accessibility.
 
-Many students ask the same questions again and again on WhatsApp, Instagram, and YouTube which gets hard to answer. This chatbot gives automatic answers to help solve that problem.
+🎯 Project Goal
 
+Students often struggle to find accurate information quickly. This project aims to:
 
+Provide instant, automated responses to student queries
+Reduce repetitive questioning across multiple platforms
+Improve access to important university-related information
+Deliver a smart, AI-driven assistance system
 
-## How We Collected Data
+📊 Data Collection Methodology
 
-To make this chatbot useful:
+To ensure the chatbot provides reliable and relevant answers:
 
-- We visited 20 different university websites in Pakistan and copied their FAQs (Frequently Asked Questions).
-- We also asked students to fill out a form with their own questions.
-- We combined all these questions and answers into one PDF.
-- This PDF was used by the chatbot to answer questions.
+🌐 Collected FAQs from 20+ university websites in Pakistan
+📝 Gathered real student queries through Google Forms
+📄 Combined all data into a single structured PDF document
+📚 Used this PDF as the primary knowledge base for the chatbot
 
+🚀 Key Features
+📂 Upload university-related PDF files (e.g., FAQs, brochures, admission guides)
+🔍 Intelligent document processing and understanding
+✂️ Splits documents into smaller chunks for better retrieval
+🧠 Converts text into embeddings for semantic search
+🎯 Retrieves the most relevant information based on user queries
+💬 Generates concise and accurate answers using Google Gemini AI
+🌐 Simple and interactive web interface built with Streamlit
 
+⚙️ Tech Stack
+Programming Language: Python
+Frameworks & Libraries:
+LangChain
+Streamlit
+PDFPlumber
+NumPy
+scikit-learn
+AI & APIs:
+Google Gemini API
+Concept Used:
+Retrieval-Augmented Generation (RAG)
 
-## What This Chatbot Can Do
+🧠 How It Works
+📥 Upload a PDF document (e.g., university FAQs)
+📖 The system reads and processes the document
+✂️ Content is split into smaller chunks
+🔎 Each chunk is converted into embeddings for efficient search
+❓ User asks a question (e.g., "What documents are required for NTS?")
+📌 The system retrieves the most relevant chunks
+🤖 Gemini AI generates a clear and concise answer based on retrieved data
 
-- Reads PDF files like brochures, admission guides, and FAQs.
-- Understands student questions.
-- Gives quick and smart answers using AI.
-
-
-## Features
-
-- Upload university-related PDF documents (in our case -> university_faq.pdf)
-- Breaks the PDF into small parts for better understanding.
-- Turns those parts into a format that AI can understand.
-- Finds the best parts of the PDF related to your question.
-- Gives a short and helpful answer using Google's Gemini AI.
-- Easy-to-use web app made with Streamlit.
-
-
-
-## Tools and Technologies Used
-
-- Python
-- LangChain
-- Streamlit
-- PDFPlumber
-- NumPy
-- scikit-learn
-- Google Gemini API
-
-
-## How It Works
-
-1. Upload a PDF file (for example: university FAQs).
-2. The chatbot reads and splits the content into small parts.
-3. You type a question (for example: "What documents are needed for NTS?").
-4. The chatbot finds the most relevant parts from the PDF.
-5. It uses those parts to give a short and correct answer.
-
-### How to run this
-### 1. Clone the Repository
-- git clone https://github.com/SohaibBazaz/rag-university-chatbot.git
-- cd rag-university-chatbot
-
-### 2. Install Libraries:
-- pip install -r requirements.txt
-
-### 3. Run the program:
-- streamlit run University_Assistant.py
-
-## Future Plans
-
-- Add human support when the AI can’t answer.
-- Add voice support so users can speak their questions.
-- Make a mobile app for easy access on phones.
-- Add Urdu language support.
-
-
-## Team Members
-
-- Sohaib Ahmed Bazaz
-- Muhammad Umar 
-
-
-
+🛠️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/SohaibBazaz/rag-university-chatbot.git
+cd rag-university-chatbot
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+3️⃣ Run the Application
+streamlit run University_Assistant.py
